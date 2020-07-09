@@ -1,0 +1,102 @@
+/* medium Layout 1140px*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+
+.footer-menu ul li {
+	margin-left: 2rem;
+	padding: 2rem 2rem;
+}
+.footer-menu ul li a {
+	font-size: 2.1rem;
+}
+}
+/* Table Device 768px*/
+@media only screen and (min-width:768px ) and (max-width: 991px) {
+html {
+	font-size: 61.5%;
+}
+.service-icon-tablecell {
+	font-size: 12rem;
+}
+.service-icon-wrap img {
+	height: 12rem;
+}
+.single-service-item {
+	margin-bottom: 4rem;
+}
+.social-link {
+	margin-top: 2rem;
+}
+.single-team-item {
+	margin-bottom: 4rem;
+}
+.single-skill-wrap {
+	margin-bottom: 4rem;
+}
+.single-protfolio-item img {
+	max-width: 40.9rem;
+}
+.single-protfolio-item {
+	text-align: center;
+}
+.footer-menu ul li {
+	margin-left: 1rem;
+	padding: 2rem 1rem;
+}
+.footer-menu ul li a {
+	font-size: 2rem;
+}
+
+}
+/* small mobile 320px*/
+@media only screen and (max-width: 767px) {
+	.main-mneu {
+	display: none;
+}
+.menu-triger {
+	position: absolute;
+	display: block;
+	right: 19px;
+	top: -29px;
+}
+html {
+	font-size: 50.5%;
+}
+
+.single-protfolio-item {
+	margin-bottom: 4rem;
+	text-align: center;
+}
+.single-protfolio-item img {
+	max-width: 40rem;
+}
+ul.protfolio-btn li {
+	padding: 1rem 2rem;
+}
+.sigle-testimonial-item p {
+	width: auto;;
+}
+.footer-menu ul li {
+	padding: 1rem 1rem;
+	display: inline-block;
+}
+.footer-menu ul li a {
+	font-size: 2rem;
+}
+
+}
+/* wide mobile layour 480px */
+@media only screen and (min-width: 480px) and (max-width:767px) {
+.menu-triger {
+	position: absolute;
+	display: block;
+	right: 19px;
+	top: -24px;
+}
+.footer-menu ul li {
+	padding: .5rem .2rem;
+	margin-left: .5rem;
+}
+
+
+}

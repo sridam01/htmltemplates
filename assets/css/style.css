@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300&display=swap');
+
+/* ====================*/
+/* Basic css*/
+
+h1{
+	
+	font-weight: 700;
+}
+html{
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 1.6rem;
+	
+}
+
+/*======== common Css*/
+h2 {
+    font-size: 3.8rem;
+    margin-bottom: 2.3rem;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+h2:after {
+    position: absolute;
+    left: 50%;
+    bottom: -.7rem;
+    height: .3rem;
+    width: 6rem;
+    content: "";
+    background: #14A58C;
+    margin-left: -3rem; }
+ /*======== end common Css*/
+ /*======== Offcanvas menu css Css*/
+.off-canvas-menu {
+  background: #42214F;
+  z-index: 9999;
+  position: fixed;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  margin-right: -400px;
+  display: block;
+  transition: .3s;
+
+}
+.off-canvas-menu.active{
+  margin-right: 0;
+
+}
+.off-canvas-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.off-canvas-menu li {
+  padding: 17px;
+  border-bottom: 1px solid #686565;
+  transition: .3s;
+}
+.off-canvas-menu li a {
+  color: #fff;
+  font-size: 18px;
+  padding: 11px 93px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+}
+.off-canvas-menu li:hover {
+  background: #643A79;
+}
+
+
+.menu-close {
+  position: absolute;
+  left: 1px;
+  top: -7px;
+  color: #fff;
+  font-size: 33px;
+  cursor: pointer;
+}
+
+.off-canvas-overlay {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  z-index: 9;
+  opacity: 0;
+  cursor: pointer;
+  display: none;
+
+}
+.off-canvas-overlay.active{
+  display: block;
+  opacity: .6;
+}
+
+.menu-triger span {
+  background: #fff;
+  height: 2px;
+  width: 40px;
+  display: block;
+  margin-bottom: 10px;
+  right: 0;
+  top: 0;
+}
+.menu-triger {
+  position: absolute;
+  display: none;
+  
+}
+
+/* off canvas menu css End */
+
+
+/* sTART HEADER AREA CSS */
+.header-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 2.5rem 0;
+}
+.sticky{
+  position: fixed;
+  width: 100%;
+  background: #42214F;
+  top: 0;
+}
+.logo img {
+    max-width: 10rem;
+}
+
+.main-mneu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-mneu ul li {
+    display: inline-block;
+    margin-left: 0 1rem;
+}
+
+.main-mneu {
+    padding:1rem;
+}
+
+.main-mneu ul li a {
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .3s;
+    padding: .2rem 1.3rem;
+    color: #fff;
+}
+
+.main-mneu ul li a:hover {
+    background: #643A79;
+}
+/* END HEADER AREA CSS */
+
+
+/* sTART HERO AREA CSS */
+.hero-bg{
+	background-image: url(../img/bg1.png);
+	 background-repeat: no-repeat;
+  	background-attachment: fixed;
+}
+.hero-area {
+	
+    padding-bottom: 8rem;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    padding-top: 15rem;
+}
+.hero-text h1 {
+    font-size: 3.7rem;
+    line-height: 4rem;
+
+}
+.hero-area a.colored-btn, .load-more-btn {
+    background: #EB7D4B;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-top: 8rem;
+}
+.hero-area:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    background: #87509C;
+    z-index: -1;
+    opacity: .9;
+}
+
+/* END HEADER AREA CSS */
+
+/*--- service area css*/
+.service-bg{
+	background-image: url(../img/bg2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-color: #ddd;
+}
+.section-padding {
+    padding: 8rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.service-bg:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    content: "";
+    opacity: .9;
+    z-index: -1;
+    background: #17C2A4;
+}
+
+.service-text {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 100;
+    margin-bottom: 4rem;
+    line-height: 2.1rem;
+}
+
+.service-text h2 {
+    font-size: 3.8rem;
+    margin-bottom: 2.3rem;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.service-text h2:after {
+    position: absolute;
+    left: 50%;
+    bottom: -.7rem;
+    height: .3rem;
+    width: 6rem;
+    content: "";
+    background: #14A58C;
+    margin-left: -3rem;
+}
+
+.single-service-item {
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 2.1rem;
+}
+
+.service-icon-wrap {
+    display: table;
+    width: 100%;
+    margin-bottom: 2.4rem;
+}
+
+.service-icon-tablecell {
+    display: table-cell;
+    font-size: 13rem;
+    vertical-align: middle;
+}
+
+.service-icon-wrap img {
+    max-width: 11.4rem;
+    height: 12.9rem;
+}
+.single-service-item h2 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+/*--- End service area css*/
+
+
+/*--- team area css*/
+.team-bg {
+    background: #E7F1F8;
+    color: #3c4761;
+    font-size: 1.6rem;
+}
+
+.team-title {
+    margin-bottom: 3.7rem;
+}
+
+.team-title h2 {
+    font-size: 3.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 2.1rem;
+}
+
+.team-title h2:after {
+    position: absolute;
+    left: 50%;
+    bottom: -.7rem;
+    height: .4rem;
+    width: 7rem;
+    margin-left: -3.5rem;
+    content: "";
+    background: #CCDCE7;
+}
+
+.single-team-item {
+    text-align: center;
+    font-size: 1.6;
+    font-weight: normal;
+}
+
+.team-img img {
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+
+.team-img {
+    margin-bottom: 3.2rem;
+}
+
+.single-team-item h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.7rem;
+}
+
+.single-team-item h2 span {
+    display: block;
+    font-weight: 100;
+    font-size: 70%;
+    text-transform: none;
+    margin-top: .5rem;
+    color: #30bae7;
+}
+.social-link{
+	margin-top: 4.5rem;
+}
+
+.social-link ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-link ul li {
+    display: inline-block;
+    margin:0 .3rem;
+}
+
+
+.social-link ul li a {
+    display: block;
+    color: #fff;
+    background: black;
+    font-size: 1.8rem;
+    margin: .3rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    line-height: 2.9rem;
+    transition: .3s;
+}
+.social-link ul li a:hover {
+    background: red;
+    transform: rotate(360deg);
+}
+
+/*--- End team area css*/
+
+
+
+
+/*--- start skill area css*/
+
+
+.single-skill-wrap {
+  text-align: center;
+}
+.circle-progressbar-wrap {
+  position: relative;
+}
+.progressbar-percentage {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  font-size: 5rem;
+  line-height: 4rem;
+  font-weight: 300;
+  margin-top: -2.5rem;
+}
+
+.skill-bg {
+  background: #ffffff;
+}
+.single-skill-list {
+  margin-bottom: 6rem;
+  font-size: 1.6rem;
+  font-weight: 100;
+}
+.single-skill-list h2 {
+  margin-bottom: 2.3rem;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+}
+.single-skill-list h2:after {
+  position: absolute;
+  left: 50%;
+  bottom: -.8rem;
+  height: .4rem;
+  width: 8.5rem;
+  background: #dfe8ed;
+  content: "";
+  margin-left: -4.2rem;
+}
+.single-skill-wrap h3 {
+  margin-top: 1.2rem;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+/*--- end skill area css*/
+
+
+
+/*--- start protfolio area css*/
+.protfolio-title h2:after {
+    background: #e5c37f;
+}
+
+ul.protfolio-btn {
+    margin: 0;
+    padding: 0;
+    margin: 30px 0;
+}
+
+ul.protfolio-btn li {
+    display: inline-block;
+    margin: 1rem;
+    padding: 1rem 3rem;
+    background: #ebc985;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #393939;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s;
+}
+ul.protfolio-btn li:hover {
+    box-shadow: -.1rem -.1rem .4rem 0 #333;
+}
+.protfolio-bg {
+    background: #ffdd99;
+    color: #393939;
+}
+
+.single-protfolio-item img {
+    max-width: 50rem;
+}
+
+.single-protfolio-item {
+    margin-bottom: 3rem;
+}
+
+.protfolio-bg a.load-more-btn {
+    display: inline-block;
+    color: #fff;
+    background: #17c2a4;
+    font-weight: 600;
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    box-shadow: 0 0 .3rem #333;
+    text-decoration: none;
+}
+
+ul.protfolio-btn li.active {
+    background: #fff;
+}
+/*--- end protfolio area css*/
+
+/*--- start testimonial css*/
+
+.testimonail-area {
+  background: #d74680;
+  color: #fff;
+}
+
+
+
+.client-area img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+}
+.client-area h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #333;
+}
+.client-area h3 span {
+  display: block;
+  font-size: 72%;
+}
+
+.sigle-testimonial-item {
+  margin-top: 4rem;
+  font-size: 2rem;
+}
+.client-area {
+  margin-bottom: 2.5rem;
+}
+.sigle-testimonial-item p {
+  width: 70rem;
+  margin: 0 auto;
+}
+
+.testimonial-wrap.owl-carousel .owl-item img {
+  width: 15rem;
+  margin: 0 auto;
+}
+
+/*--- End testimonial css*/
+
+/*--- Start Contact area css*/
+.contact-title {
+  margin-bottom: 35px;
+}
+.contact-title h2:after {
+  background: #273a71;
+}
+
+.contact-form input[type="text"], input[type=email], input[type=submit], textarea {
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 2.4rem;
+  border: none;
+  background: #273a71;
+  color: #fff;
+}
+.contact-area {
+  background: #3c5499;
+  color: #fff;
+}
+.contact-form input[type=submit] {
+ 
+  font-size: 1.8rem;
+  padding: 1.5rem 3rem;
+  text-transform: uppercase;
+  background: #30bae7;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  width: auto;
+}
+/*--- End Contact area css*/
+
+
+
+
+/*--- Start footer area css*/
+
+.footer-padding {
+  background: #344b8e;
+  padding: 1.5rem 0;
+ 
+}
+.footer-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-menu ul li {
+  display: inline-block;
+  margin-left: 2.4rem;
+  padding: 2rem 2.6rem;
+
+}
+.footer-menu {
+  text-align: center;
+}
+.footer-menu ul li a {
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: #fff;
+  text-transform: capitalize;
+  transition: .3s;
+}
+.footer-menu ul li a:hover {
+  color: #30bae7;
+}
+/*--- End footer area css*/
+
+.scrolltotop {
+  position: fixed;
+  height: 5rem;
+  width: 5rem;
+  background: #602A75;
+  right: 10.6rem;
+  bottom: 1.12rem;
+  z-index: 990;
+  color: #fff;
+  font-size: 3.4rem;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 4.8rem;
+  cursor: pointer;
+}
